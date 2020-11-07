@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Valence</title>
+  <!-- Jquery -->
+  <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+    crossorigin="anonymous"></script>
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <!-- Bootstrap Jquery -->
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous">
+  </script>
+  <!--Our stylesheet-->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <nav class="nav">
+        <a href="index.html" class="nav-brand">Valence <span>Music</span></a>
+    </div>
+    </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container">
+      <div class="row">
+        <div class="row">
+          <div class="main-content text-center ">
+            <h1 class="main-heading">Music by mood.</h1>
+            <img class="img-center"
+              src="https://content.thriveglobal.com/wp-content/uploads/2019/09/best-meditation-music.jpg" alt="music">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="closer-look light-bg py-5">
+    <div class="container">
+      <div class="row align-items-md-center">
+        <div class="col-md-6 mb-4 mb-md-0">
+          <h1 class="section-heading">Take a closer look</h1>
+          <p class="my-4">Music has the ability to evoke powerful emotional responses such as chills and thrills in
+            listeners. Positive emotions dominate musical experiences. Pleasurable music may lead to the release of
+            neurotransmitters associated with reward, such as dopamine.
+            Listening to music is an easy way to alter mood or relieve stress.</p>
+
+          <!--Form to enter mood-->
+          <form>
+            <a class="text-uppercase d-inline-block btn-soft
+            light">Choose a mood:</a>
+            <br><br>
+            <!-- Search Buttons -->
+            <button class="text-uppercase d-inline-block btn-soft light" data-toggle="modal" data-target="#modal"
+              id='searchSongsBtn'>Search songs by mood</button>
+            <button class="text-uppercase d-inline-block btn-soft light" data-toggle="modal" data-target="#modal"
+              id='searchArtistBtn'>Search artists by Mood</button>
+            <button class="text-uppercase d-inline-block btn-soft light" data-toggle="modal" data-target="#modal"
+              id='searchAlbumBtn'>Search albums by mood</button>
+          </form>
+
+        </div>
+        <div class="col-md-6 text-center">
+          <img class="img-fluid d-md-block ml-md-auto"
+            src="https://content.thriveglobal.com/wp-content/uploads/2019/07/how-does-music-affect-the-brain.jpg"
+            alt="brain">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sharp-contrast  py-5">
+    <div class="container">
+      <div class="row align-items-md-center">
+
+        <div class="col-md-6 text-center">
+          <img class="img-fluid d-md-block mr-md-auto"
+            src="https://storage.googleapis.com/afs-prod/media/c7ee6099a9044f57b6502c4b2a6105d7/2763.jpeg"
+            alt="Kanye West">
+        </div>
+
+        <!--Kanye Quote-->
+
+        <div class="col-md-6 mb-4 mb-md-0">
+          <h1 class="section-heading">Generate a quote by Yeezus, Himself</h1>
+          <p class="my-4">The best of the West needs his word spread to the world</p>
+          
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Kanye Rest -->
+  <h3 style="text-align: center;">Get Kanye Quote</h3>
+  <p id="Kanyequote" style="text-align: center;">
+  <div id="screen" class="flex-center-full">
+    <button class="text-uppercase  btn-soft light " id='kanyeRestbtn'>Click Me!</button>
+    <p class="kanyeWestQuoteLable" style="text-align: center;"></p>
+  </div>
+  </p>
+  <!-- End Kanye Rest  -->
+
+  <!--Quotes, adding character and context-->
+  <section class="features  light-bg py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 mb-4">
+          <div class="features-item">
+            <div class="item-icon">
+            </div>
+            <div class="item-text">
+              <h2>Albert Einstein</h2>
+              <p>“If I were not a physicist, I would probably be a musician. I often think in music. I live my daydreams
+                in music. I see my life in terms of music.”</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6 mb-4">
+          <div class="features-item">
+            <div class="item-icon">
+            </div>
+            <div class="item-text">
+              <h2> Bob Marley</h2>
+              <p>“One good thing about music, when it hits you, you feel no pain.”</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6 mb-4 mb-lg-0">
+          <div class="features-item">
+            <div class="item-icon">
+            </div>
+            <div class="item-text">
+              <h2>Billy Joel</h2>
+              <p>“I think music in itself is healing.
+                It’s an explosive expression of humanity. It’s something we are all touched by. No matter what culture
+                we’re from, everyone loves music.”
+              </p>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-lg-6">
+          <div class="features-item">
+            <div class="item-icon">
+            </div>
+            <div class="item-text">
+              <h2>Michael Jackson</h2>
+              <p>“People ask me how I make music. I tell them I just step into it.
+                It’s like stepping into a river and joining the flow. Every moment in the river has its song.”</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  
+
+
+
+  <!--Adding Valence definition-->
+  <footer class="py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-6">
+          <h5 class="nav-brand">Valence <span>Music</span></h5>
+          <p>Describes the musical positiveness conveyed by a track. Tracks with high valence sound more positive
+            (e.g. happy, cheerful, euphoric), while tracks with low valence sound more negative (e.g. sad, depressed,
+            angry).</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- Modal to populate songlist into -->
+  <div class="modal fade" id="modal" tabindex="-1" aria-labelledby="modalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalLabel">Top 50 tracks related to your search</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <!-- Put all search functions here -->
+          <div>
+            <p id="inputLabel"></p>
+            <input type="text" id="searchBox">
+          </div>
+          <button class="text-uppercase d-inline-block btn-soft light" id='searchBtn'>Search by mood</button>
+        </div>
+        <!-- Search Results go here -->
+        <div id="populateListHere"></div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- JS to open the menu on click -->
+  <!-- Added spotify player incase we want to use it, if not delete -->
+  <!-- Commented out until we can get functionality to spotify player -->
+  <!--<script src="https://sdk.scdn.co/spotify-player.js"></script>-->
+  <script src="script.js"></script>
+
+
+</body>
+
+</html>
